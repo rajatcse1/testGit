@@ -1,4 +1,4 @@
-## Configure NODE and NPM environment
+### Configure NODE and NPM environment
 * Download node.exe from http://nodejs.org/download/
 * create folder D:/node and paste downloaded node.exe inside
 * Download NPM from here http://nodejs.org/dist/npm/ and extract in D:/node	folder structure will be: 
@@ -14,5 +14,7 @@
 	setx PATH "D:\node" && setx NODE_PATH "D:\node\node_modules"
 * restart cmd
 * Check the installation by "node -v" to get node version and "npm -v" for npm version
+
 ---
-## Configure grunt environment
+
+### Configure grunt environment
