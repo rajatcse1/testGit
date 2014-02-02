@@ -1,0 +1,90 @@
+[
+  {
+    "pid" : 0,
+    "title" : "Blues Singer",
+    "image" : "blues_singer.jpg",
+    "subalbum" : [
+      {
+        "pid" : 0,
+        "title" : "Another Realm",
+        "image" : "another_realm.jpg"
+      },
+      {
+        "pid" : 1,
+        "title" : "Ascendant",
+        "image" : "ascendant.jpg"
+      },
+      {
+        "pid" : 2,
+        "title" : "Ascent",
+        "image" : "ascent.jpg"
+      }
+    ]
+  },
+  {
+    "pid" : 1,
+    "title" : "Destiny",
+    "image" : "destiny.jpg",
+    "subalbum" : [
+      {
+        "pid" : 0,
+        "title" : "Cathedral of Trees",
+        "image" : "cathedral_of_trees.jpg"
+      },
+      {
+        "pid" : 1,
+        "title" : "Come Up Here",
+        "image" : "come_up_here.jpg"
+      },
+      {
+        "pid" : 2,
+        "title" : "Crystal Forest",
+        "image" : "crystal_forest.jpg"
+      }
+    ]
+  },
+  {
+    "pid" : 2,
+    "title" : "Eagle",
+    "image" : "eagle.jpg",
+    "subalbum" : [
+      {
+        "pid" : 0,
+        "title" : "Curved Road",
+        "image" : "curved_road.jpg"
+      },
+      {
+        "pid" : 1,
+        "title" : "Dawn Breaking",
+        "image" : "dawn_breaking.jpg"
+      },
+      {
+        "pid" : 2,
+        "title" : "Dawn",
+        "image" : "dawn.jpg"
+      }
+    ]
+  },
+  {
+    "pid" : 3,
+    "title" : "Evening Harvest",
+    "image" : "evening_harvest.jpg",
+    "subalbum" : [
+      {
+        "pid" : 0,
+        "title" : "Destiny",
+        "image" : "destiny.jpg"
+      },
+      {
+        "pid" : 1,
+        "title" : "Destiny2",
+        "image" : "destiny2.jpg"
+      },
+      {
+        "pid" : 2,
+        "title" : "Eagle Rising",
+        "image" : "eagle_rising.jpg"
+      }
+    ]
+  }
+]
