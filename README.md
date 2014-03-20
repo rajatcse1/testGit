@@ -14,4 +14,13 @@ All concepts collected together
 5. marionette
 6. javascript
 7. others
-  - OOAD : http://www.codeproject.com/Articles/93369/How-I-explained-OOD-to-my-wife
+  - OOAD : 
+    - Quick learn: 
+      - http://www.codeproject.com/Articles/93369/How-I-explained-OOD-to-my-wife
+      - http://lostechies.com/wp-content/uploads/2011/03/pablos_solid_ebook.pdf
+    - Principles:
+      - [Open Close Principle]( https://docs.google.com/file/d/0BwhCYaYDn8EgN2M5MTkwM2EtNWFkZC00ZTI3LWFjZTUtNTFhZGZiYmUzODc1/edit?hl=en)
+      - [Dependency Inversion Principle](https://docs.google.com/file/d/0BwhCYaYDn8EgMjdlMWIzNGUtZTQ0NC00ZjQ5LTkwYzQtZjRhMDRlNTQ3ZGMz/edit?hl=en)
+      - [Interface Segregation Principle](https://docs.google.com/file/d/0BwhCYaYDn8EgNzAzZjA5ZmItNjU3NS00MzQ5LTkwYjMtMDJhNDU5ZTM0MTlh/edit?hl=en)
+      - [Single Responsibility Principle](http://www.objectmentor.com/resources/articles/srp.pdf)
+      - [Liskov's Substitution Principle](https://docs.google.com/file/d/0BwhCYaYDn8EgNzAzZjA5ZmItNjU3NS00MzQ5LTkwYjMtMDJhNDU5ZTM0MTlh/edit?hl=en)
