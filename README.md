@@ -14,3 +14,4 @@ All concepts collected together
 5. marionette
 6. javascript
 7. others
+  - OOAD : http://www.codeproject.com/Articles/93369/How-I-explained-OOD-to-my-wife
