@@ -16,6 +16,7 @@
 ## Configure `package.json`
 1. Go to project folder 
 2. Run `npm init` and follow steps. After providing data it looks like:
+
 > {  
 >   "name": "project name",  
 >   "version": "0.0.0",  
@@ -43,9 +44,9 @@
 
 ## Configure basic client app template
 Create project structure as bellow:
-> +---deploy  
-> +---development  
-> |   +---css  
+> +----deploy  
+> +----development  
+> |    +---css  
 > |   |   \---vendor  
 > |   +---img  
 > |   |   +---bg  
