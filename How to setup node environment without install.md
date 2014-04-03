@@ -17,7 +17,7 @@
 1. Go to project folder 
 2. Run `npm init` and follow steps. After providing data it looks like:
 
-```
+```json
  {  
     "name": "project name",  
    	"version": "0.0.0",  
