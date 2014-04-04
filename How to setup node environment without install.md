@@ -73,7 +73,7 @@ application
  \---test  
 ```
 ## Configure node server start client app
-1. Install node express module
+- Install node express module
 	2. Go to project folder
  	2. Run `npm install express --save` to install express and save the dependency in `package.json`. Like:
 ```
@@ -81,7 +81,7 @@ application
              "express": "~3.5.1"  
          }  
 ```
-2. Write server app `server.js`
+- Write server app `server.js`  
 ```js
 var express, http, path, reload, cars, app,
     clientDir, server;
@@ -123,10 +123,16 @@ server = http.createServer(app);
 server.listen(app.get('port'), function() {
     console.log("Web server listening on port " + app.get('port'));
 });
-```
-3. Run Server App
+```  
+- Run Server App  
 Run `node server.js` and go to `http://localhost:3000` to open `index.html`
-  
+
+## Configure `.gitignore`
+To ignore `node_modules` folder add following in `.gitignore`
+```
+# Folders to ignore  
+node_modules
+```  
 
 ## Install Grunt CLI(Command Line Interface)
 Run `npm install grunt-cli -g` to install grunt CLI globally to access from anywhere.
@@ -139,23 +145,15 @@ Run `npm install grunt-cli -g` to install grunt CLI globally to access from anyw
      "grunt": "~0.4.4"  
    }  
 ```
-
-## Configure `.gitignore`
-To ignore `node_modules` folder add following in `.gitignore`
-```
-# Folders to ignore  
-node_modules
-```
-
 ## Configure grunt environment
-1. watch
-2. less to css
-3. file copy 
-4. folder clear
-5. JavaScript hint
-6. HTML hint
-7. unit test
-8. require
+- watch
+- less to css
+- file copy 
+- folder clear
+- JavaScript hint
+- HTML hint
+- unit test
+- require
 
 ## Configure bower environment
 1. Install node bower module
