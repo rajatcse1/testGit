@@ -81,7 +81,7 @@ application
              "express": "~3.5.1"  
          }  
 ```
-2. Write server app
+2. Write server app `server.js`
 ```js
 var express, http, path, reload, cars, app,
     clientDir, server;
@@ -125,7 +125,7 @@ server.listen(app.get('port'), function() {
 });
 ```
 3. Run Server App
-
+Run `node server.js` and go to `http://localhost:3000` to open `index.html`
   
 
 ## Install Grunt CLI(Command Line Interface)
