@@ -134,6 +134,18 @@ To ignore `node_modules` folder add following in `.gitignore`
 node_modules
 ```  
 
+## Configure bower environment
+1. clear npm cache by `npm cache clear`
+2. Run `npm install bower --save-dev` to install bower locally and save the dependency in `package.json`
+2. Configure `.bowerrc` file with the following code to specify the folder for libraries
+```json
+{
+  "directory": "application/development/js/vendor"
+}
+``` 
+3. Configure bower.json and set dependencies
+3. Run bower install to download dependent libraries
+
 ## Install Grunt CLI(Command Line Interface)
 Run `npm install grunt-cli -g` to install grunt CLI globally to access from anywhere.
 
@@ -155,8 +167,5 @@ Run `npm install grunt-cli -g` to install grunt CLI globally to access from anyw
 - unit test
 - require
 
-## Configure bower environment
-1. Install node bower module
-2. Configure bower.json and set dependencies
-3. Run bower install to download dependent libraries
+
 
