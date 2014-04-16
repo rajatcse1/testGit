@@ -1,8 +1,9 @@
-Problem: 
+##Problem: 
   Want to create a virtual host named `www.laravelDemo.dev` from my dev location `E:/Work/rajat/Laravel_My_First_App` using xampp.
 
-Solution:
--Step 1: Find `C:\xampp\apache\conf\extra\httpd-vhosts.conf` file and open in editor. Change the following:
+##Solution:
+I have opted `127.0.0.2:80` for my virtual host and left `127.0.0.1:80` for default xampp portal.  
+<b>Step 1:</b> Find `C:\xampp\apache\conf\extra\httpd-vhosts.conf` file and open in editor. Change the following:
 ```
 <VirtualHost 127.0.0.2:80>
     DocumentRoot "E:/Work/rajat/Laravel_My_First_App/public"
@@ -14,7 +15,9 @@ Solution:
     </Directory>
 </VirtualHost>
 ```        
--Step 2: Find `C:\Windows\System32\drivers\etc\hosts` file and open in editor. Change as followed:
+<b>Step 2:</b> Find `C:\Windows\System32\drivers\etc\hosts` file and open in editor. Change as followed:
 ```
-127.0.0.2 		www.laravelDemo.dev
+127.0.0.1	localhost
+127.0.0.2	www.laravelDemo.dev
+::1		localhost
 ```
