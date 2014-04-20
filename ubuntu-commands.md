@@ -59,4 +59,6 @@ mv -v composer.phar /usr/local/bin/composer
 composer create-project laravel/laravel laravel-test
 ```
 
-NB: http://rakesh.tembhurne.com/notes-on-setting-lamp-environment-for-web-development-on-ubuntu/
+NB: 
+- http://rakesh.tembhurne.com/notes-on-setting-lamp-environment-for-web-development-on-ubuntu/
+- http://www.rosehosting.com/blog/how-to-install-laravel-4-with-twitter-bootstrap-on-linux-vps/
