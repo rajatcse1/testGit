@@ -11,3 +11,4 @@
 - <b>xampp</b> : `sudo add-apt-repository ppa:upubuntu-com/xampp & sudo apt-get update & sudo apt-get install xampp`
 - <b>Flash Player</b> : `sudo add-apt-repository "deb http://archive.canonical.com/ $(lsb_release -sc) partner"` & `sudo apt-get update && sudo apt-get install flashplugin-installer` & `sudo apt-get install ubuntu-restricted-extras`  
 - <b>lubuntu theme</b> : `sudo apt-get install lubuntu-desktop` or for only one theme `sudo apt-get install lxde`. After install goto login screen and select theme icon and choose `lubuntu`
+- <b>Partition manager</b> : `sudo apt-get install gparted`
