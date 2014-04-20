@@ -5,6 +5,10 @@
 
 ## Laravel ##
 - <b>To change any folder path in Ubuntu</b>: `sudo chmod -R o+w /usr/local/bin`
+- <b>Link to dev folder to lampp</b>:  
+  `@rajat:/opt/lampp/htdocs$ sudo ln -s /home/rajat/public_html/ rajat`. 
+  - First go to `/opt/lampp/htdocs` and create link your dev folder `/home/rajat/public_html/` as `rajat`
+  - As a result `/home/rajat/public_html/project_xyz` will be accessible as `http://localhost/rajat/project_xyz/`
 
 ## Install ##
 - <b>VLC Media Player</b> :   
