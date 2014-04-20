@@ -9,6 +9,8 @@
   `@rajat:/opt/lampp/htdocs$ sudo ln -s /home/rajat/public_html/ rajat`. 
   - First go to `/opt/lampp/htdocs` and create link your dev folder `/home/rajat/public_html/` as `rajat`
   - As a result `/home/rajat/public_html/project_xyz` will be accessible as `http://localhost/rajat/project_xyz/`
+- for changing storage directory run `sudo chmod -R 777 app/storage/` going to laravel project folder  
+
 
 ## Install ##
 - <b>VLC Media Player</b> :   
