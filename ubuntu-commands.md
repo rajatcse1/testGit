@@ -11,18 +11,26 @@
   - As a result `/home/rajat/public_html/project_xyz` will be accessible as `http://localhost/rajat/project_xyz/`
 - for changing storage directory run `sudo chmod -R 777 app/storage/` going to laravel project folder  
 - for creating virtual directory  
+  - make sure `/opt/lampp/etc/httpd.conf` has this :
+```
+# Virtual hosts
+Include etc/extra/httpd-vhosts.conf
+```  
+
   - open `http-vhost.conf` in sublimeText2 editor using  `sudo subl /opt/lampp/etc/extra/httpd-vhosts.conf` and chamge the following:
 ```
-<VirtualHost *:80>
-    DocumentRoot "/home/rajat/public_html/laravel-test/public"
+<VirtualHost 127.0.0.2:80>
+    DocumentRoot "/var/www/rajat/laravel-test/public"
     ServerName laravel.dev
-    ErrorLog "logs/laravel.dev-error_log"
-    CustomLog "logs/laravel.dev-access_log" common
+    <Directory "/var/www/rajat/laravel-test/public">
+        Require all granted
+    </Directory>
 </VirtualHost>
 ```
+
   - open `hosts` in sublineText2 editor using `sudo subl /etc/hosts` and change following:
 ```
-127.0.0.1	laravel.dev
+127.0.0.2	laravel.dev
 ```
 
 
