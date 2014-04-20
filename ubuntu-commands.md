@@ -53,5 +53,10 @@ sudo apt-get install php5-cli
 curl -sS https://getcomposer.org/installer | php
 mv -v composer.phar /usr/local/bin/composer
 ```
+- <b>Install Laravel latest version</b>:  
+  - Goto dev folder and run this command to install laravel in `laravel-test` folder in dev folder
+```
+composer create-project laravel/laravel laravel-test
+```
 
 NB: http://rakesh.tembhurne.com/notes-on-setting-lamp-environment-for-web-development-on-ubuntu/
