@@ -39,5 +39,9 @@ sudo add-apt-repository ppa:webupd8team/sublime-text-2
 sudo apt-get update
 sudo apt-get install sublime-text
 ```
+- <b>Curl and git</b>:  
+```
+sudo apt-get install curl git -y
+```
 
 NB: http://rakesh.tembhurne.com/notes-on-setting-lamp-environment-for-web-development-on-ubuntu/
