@@ -47,5 +47,11 @@ sudo apt-get install curl git -y
 ```
 sudo apt-get install php5-cli
 ```
+- <b>composer (dependency manager)</b>:  
+  Goto any writable folder like `/var/www` and execute these commands
+```
+curl -sS https://getcomposer.org/installer | php
+mv -v composer.phar /usr/local/bin/composer
+```
 
 NB: http://rakesh.tembhurne.com/notes-on-setting-lamp-environment-for-web-development-on-ubuntu/
