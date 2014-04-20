@@ -43,5 +43,9 @@ sudo apt-get install sublime-text
 ```
 sudo apt-get install curl git -y
 ```
+- <b>Install PHP-cli</b>:  
+```
+sudo apt-get install php5-cli
+```
 
 NB: http://rakesh.tembhurne.com/notes-on-setting-lamp-environment-for-web-development-on-ubuntu/
