@@ -3,6 +3,9 @@
 - Restart xampp(lampp) : `sudo /opt/lampp/lampp restart`
 - set password xampp(lampp) : `sudo /opt/lampp/lampp security`
 
+## Laravel ##
+- <b>To change any folder path in Ubuntu</b>: `sudo chmod -R o+w /usr/local/bin`
+
 ## Install ##
 - <b>VLC Media Player</b> : `sudo apt-get update & sudo apt-get install vlc`
 - <b>xampp</b> : `sudo add-apt-repository ppa:upubuntu-com/xampp & sudo apt-get update & sudo apt-get install xampp`
