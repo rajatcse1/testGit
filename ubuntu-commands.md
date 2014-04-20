@@ -5,6 +5,6 @@
 
 ## Install ##
 - VLC Media Player : `sudo apt-get update & sudo apt-get install vlc`
-- xampp : ``
-- Flash Player : ``
-- lubuntu theme : ``
+- xampp : `sudo add-apt-repository ppa:upubuntu-com/xampp & sudo apt-get update & sudo apt-get install xampp`
+- Flash Player : `sudo add-apt-repository "deb http://archive.canonical.com/ $(lsb_release -sc) partner"` & `sudo apt-get update && sudo apt-get install flashplugin-installer` & `sudo apt-get install ubuntu-restricted-extras`  
+- lubuntu theme : `sudo apt-get install lubuntu-desktop` or for only one theme `sudo apt-get install lxde`. After install goto login screen and select theme icon and choose `lubuntu`
