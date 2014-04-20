@@ -12,3 +12,6 @@
 - <b>Flash Player</b> : `sudo add-apt-repository "deb http://archive.canonical.com/ $(lsb_release -sc) partner"` & `sudo apt-get update && sudo apt-get install flashplugin-installer` & `sudo apt-get install ubuntu-restricted-extras`  
 - <b>lubuntu theme</b> : `sudo apt-get install lubuntu-desktop` or for only one theme `sudo apt-get install lxde`. After install goto login screen and select theme icon and choose `lubuntu`
 - <b>Partition manager</b> : `sudo apt-get install gparted`
+- <b>Sublime text 2</b>:`sudo add-apt-repository ppa:webupd8team/sublime-text-2` & `sudo apt-get update` & `sudo apt-get install sublime-text`
+
+NB: http://rakesh.tembhurne.com/notes-on-setting-lamp-environment-for-web-development-on-ubuntu/
