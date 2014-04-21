@@ -32,6 +32,8 @@ Include etc/extra/httpd-vhosts.conf
 ```
 127.0.0.2	laravel.dev
 ```
+- To set permanent alias do following:  
+  `gedit ~/.bash_aliases` and paste in that file `alias php=/opt/lampp/bin/php`
 
 
 ## Install ##
