@@ -13,6 +13,7 @@ All concepts collected together
 4. ember
 5. marionette
 6. javascript
+  - [All about JS](https://github.com/blakgeek/javascript)
 7. Laravel
   - [many topics together](http://culttt.com/2014/03/31/multi-tenancy-laravel-4/)
 8. others
