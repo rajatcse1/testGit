@@ -1,4 +1,4 @@
-testGit
+Test Git
 =======
 
 All concepts collected together
