@@ -10,6 +10,7 @@ All concepts collected together
   - Tooltip : http://webdesign.tutsplus.com/articles/quick-tip-tooltips-courtesy-of-html5-data-attributes--webdesign-4826
 2. Templates
 3. Angular
+  - [Interceptor](http://www.webdeveasy.com/interceptors-in-angularjs-and-useful-examples/)
 4. ember
 5. marionette
 6. javascript
