@@ -11,6 +11,7 @@ All concepts collected together
 2. Templates
 3. Angular
   - [Interceptor](http://www.webdeveasy.com/interceptors-in-angularjs-and-useful-examples/)
+  - [Event Handling](http://toddmotto.com/all-about-angulars-emit-broadcast-on-publish-subscribing/)
 4. ember
 5. marionette
 6. javascript
