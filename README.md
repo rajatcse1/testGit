@@ -15,6 +15,7 @@ All concepts collected together
   - [Security](https://docs.google.com/presentation/d/1347saovLLeQ9y-WRElKXg26fHNGnbrUFhft_2m4rOwc/edit?pli=1#slide=id.p)
   - [Error Handling](http://odetocode.com/blogs/scott/archive/2014/04/21/better-error-handling-in-angularjs.aspx)
   - [Caching](http://www.metaltoad.com/blog/angularjs-vs-browser-http-cache)
+  - [Watch](http://www.bennadel.com/blog/2566-scope-watch-vs-watchcollection-in-angularjs.htm) [[diagram]](http://teropa.info/blog/2014/01/26/the-three-watch-depths-of-angularjs.html)
 4. ember
 5. marionette
 6. javascript
