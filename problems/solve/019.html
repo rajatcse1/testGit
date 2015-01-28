@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Problem 19</title>
+	</head>
+	<body>
+		<div id="output"></div>
+		<script type="text/javascript">
+			console.time("program");
+			var output;
+			//===========================================================
+			//MY WAY ---------------
+			var days = ["mon","tue","wed","thu","fri","sat","sun"];
+			var firstDay = 1;
+			var currentYear, isLeapYear, totalSundays=0;
+			for (var i = 0; i < 100; i++) {
+				currentYear = 1901 + i;
+				isLeapYear = (currentYear % 4 == 0 || currentYear % 400 == 0);
+				
+
+				//jan
+				totalSundays += (firstDay == 6)? 1 : 0;
+				firstDay = (firstDay + 3)%7;
+
+				//feb
+				totalSundays += (firstDay == 6)? 1 : 0;
+				firstDay = (firstDay + (isLeapYear? 1 : 0))%7;
+				
+				//mar
+				totalSundays += (firstDay == 6)? 1 : 0;
+				firstDay = (firstDay + 3)%7;
+				
+				//april
+				totalSundays += (firstDay == 6)? 1 : 0;
+				firstDay = (firstDay + 2)%7;
+				
+				//may
+				totalSundays += (firstDay == 6)? 1 : 0;
+				firstDay = (firstDay + 3)%7;
+				
+				//june
+				totalSundays += (firstDay == 6)? 1 : 0;
+				firstDay = (firstDay + 2)%7;
+				
+				//july
+				totalSundays += (firstDay == 6)? 1 : 0;
+				firstDay = (firstDay + 3)%7;
+				
+				//aug
+				totalSundays += (firstDay == 6)? 1 : 0;
+				firstDay = (firstDay + 3)%7;
+				
+				//sep
+				totalSundays += (firstDay == 6)? 1 : 0;
+				firstDay = (firstDay + 2)%7;
+				
+				//oct
+				totalSundays += (firstDay == 6)? 1 : 0;
+				firstDay = (firstDay + 3)%7;
+				
+				//nov
+				totalSundays += (firstDay == 6)? 1 : 0;
+				firstDay = (firstDay + 2)%7;
+				
+				//dec
+				totalSundays += (firstDay == 6)? 1 : 0;
+				firstDay = (firstDay + 3)%7;
+
+
+				//totalSundays += (firstDay > 3)? 5: 4;
+				
+				//console.info("this:",currentYear,firstDay, (firstDay == 6)? "sunday":"");
+
+				/*firstDay += isLeapYear ? 2 : 1;
+				
+				if(firstDay > 6){
+					firstDay -= 7;
+				}*/
+			};
+
+			output = totalSundays;
+			
+			//BETTER WAY -----------
+			
+			
+			//===========================================================
+			document.getElementById("output").innerHTML ="output:"+output;
+			console.timeEnd("program");
+		</script>
+	</body>
+</html>
