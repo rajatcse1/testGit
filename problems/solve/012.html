@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Problem 12</title>
+	</head>
+	<body>
+		<div id="output"></div>
+		<script type="text/javascript">
+			console.time("program");
+			var output;
+			//===========================================================
+			//MY WAY ---------------
+			/*var num =1, triNum=0, factCount=0, factor, limit;
+			while(factCount<501){
+				triNum = triNum + num;
+				//console.log("tn:"+ triNum);
+				
+				//find factors
+				factor=2;
+				factCount = 1;
+				limit = Math.sqrt(triNum);
+				while(factor < limit){
+					if(triNum%factor == 0){
+						factCount++;
+						if(triNum%factor != factor){
+							factCount++;
+						}
+					}
+					factor++;
+				}
+
+				num++;
+			}
+			output = triNum;*/
+			
+			//BETTER WAY -----------
+			var n=3 //start with a prime 
+			var Dn=2 //number of divisors for any prime 
+			var cnt=0 //to insure the while loop is entered 
+			var n1, Dn1, i, exponent, primearray; 
+			while(cnt <= 500) { 
+				n = n+1; 
+				n1 = n; 
+				if(n1 % 2 == 0){
+					n1 = n1/2;
+				}   
+				Dn1 = 1; 
+				for(i=1; i<=primearray[i]; i++){ 
+					//If your array indexing starts at 0, change to i=0 and i<P 
+					if(primearray[i]*primearray[i] > n1 ){
+						Dn1=2*Dn1; 
+						break;
+					}
+					 
+					//When the prime divisor would be greater than the residual n1, 
+					//that residual n1 is the last prime factor with an exponent=1 
+					//No necessity to identify it. 
+				 	exponent=1 
+					while(n1 % primearray[i] == 0){ 
+					 	exponent++; 
+					 	n1 = n1/primearray[i]; 
+					} 
+				 	if(exponent > 1){
+				 		Dn1=Dn1*exponent;
+				 	} 
+					if(n1 == 1){
+						break; 
+					} 
+				} 
+				cnt = Dn*Dn1; 
+				Dn = Dn1; 
+			} 
+			output = n*(n+1)/2;
+			//===========================================================
+			document.getElementById("output").innerHTML ="output:"+output;
+			console.timeEnd("program");
+		</script>
+	</body>
+</html>

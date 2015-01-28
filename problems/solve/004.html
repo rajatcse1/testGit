@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+	<html lang = "">
+	<head>
+	<meta charset = "utf-8">
+	<meta http - equiv = "X-UA-Compatible"content = "IE=edge">
+	<meta name = "viewport"content = "width=device-width, initial-scale=1">
+	<title> Problem 4 </title>
+	</head>
+	<body>
+	<div id = "output"> </div>
+		<script type="text/javascript">
+			console.time("program ");
+			var output;
+			 //===========================================================
+			 //MY WAY ---------------
+			/*var isPalindrome = function(data) {
+				return data == reverseNumber(data);
+			};
+			var reverseNumber = function(data) {
+				var op = 0, n = data;
+				while (n > 0) {
+					op = op * 10 + n % 10;
+					n = Math.floor(n / 10);
+				}
+				return op;
+			};
+			var n = 998001, factor, multiplier;
+			while(n>10000){
+				if (isPalindrome(n)) {
+					//console.log(n);
+					factor = 999;
+					while(factor>=100){
+						multiplier = n/factor;
+						if(n%factor == 0 && multiplier >=100){
+							//console.info(factor,multiplier);
+							output = n;
+							break;
+						}
+						if(multiplier >=999){
+							break;
+						}
+						factor = factor-1;
+					}
+					if(!!output){
+						break;
+					}
+				}
+				n = n-1;
+			}*/
+
+			 //BETTER WAY -----------
+			 var isPalindrome = function(data) {
+				return data == reverseNumber(data);
+			};
+			var reverseNumber = function(data) {
+				var op = 0, n = data;
+				while (n > 0) {
+					op = op * 10 + n % 10;
+					n = Math.floor(n / 10);
+				}
+				return op;
+			};
+			var largestPalindrome = 0, a = 999,	b, db;
+			while (a >= 100) {
+				if (a % 11 == 0) {
+					b = 999;
+					db = 1;
+				} else {
+					b = 990; //The largest number less than or equal 999
+					//and divisible by 11
+					db = 11;
+				};
+				while (b >= a) {
+					if (a * b <= largestPalindrome) {
+						break;
+					}
+					if (isPalindrome(a * b)) {
+						largestPalindrome = a * b;
+					}
+					b = b - db;
+				}
+				a = a - 1;
+			}
+			output = largestPalindrome;
+
+			//===========================================================
+			document.getElementById("output").innerHTML = "output: " + output;
+			console.timeEnd("program ");
+		</script>
+	</body>
+</html>

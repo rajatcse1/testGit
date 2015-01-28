@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Title Page</title>
+
+		
+	</head>
+	<body>
+		<div id="output"></div>
+		<script type="text/javascript">
+			console.time("program");
+			// Code goes here
+			var isPrime = function(data){
+			  console.time("Prime check");
+			  for(var i=2, end=Math.sqrt(data);i<end;i++){
+			    if(data%i === 0){
+			      return false;
+			    }
+			  }
+			  console.timeEnd("Prime check");
+			  return true;
+			};
+
+			var data = 600851475143 , rangeStart = Math.sqrt(data), largestPrime, dividant;
+			if(data%2 ===0){
+				largestPrime = 2;
+			}
+			for(var j=3; j<rangeStart; j+=2){
+			  if(data%j === 0){
+			    dividant = data/j; 
+			    //console.info("divisable by ",j,dividant);
+			    if(isPrime(dividant)){
+			      document.getElementById("output").innerHTML ="BigestPrime:"+dividant;
+			      //alert("BigestPrime:"+dividant);
+			    }else{
+			      //console.log("not prime "+j);
+			      if(isPrime(j)){
+			      	largestPrime = j;
+			      }
+			    }
+			  }else{
+			    //console.log("not divisable by "+j);
+			  }
+			}
+			document.getElementById("output").innerHTML ="BigestPrime:"+largestPrime;
+			//alert("BigestPrime:"+largestPrime);
+			console.timeEnd("program");
+		</script>
+	</body>
+</html>

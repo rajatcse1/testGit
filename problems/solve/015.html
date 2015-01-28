@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Problem 15</title>
+	</head>
+	<body>
+		<div id="output"></div>
+		<script type="text/javascript">
+			console.time("program");
+			var output;
+			//===========================================================
+			//MY WAY ---------------
+			var vertex ={};
+			for(var r=20; r>=0; r--){
+				for(var c=20; c>=0; c--){
+					if(r == 20){
+						vertex[r+":"+c] = 1;
+					}else{
+						vertex[r+":"+c] = vertex[(r+1)+":"+c] + (vertex[r+":"+(c+1)] || 0);
+					}
+				}
+			}
+			//console.info(vertex);
+			output = vertex["0:0"];
+			
+			//BETTER WAY -----------
+			//Without using any extra space
+			/*function countRoutes(m,n){
+				if(n === 0 || m === 0){
+					return 1;
+				}
+				return countRoutes(m, n - 1) + countRoutes(m - 1, n);
+			}
+			output = countRoutes(14,14);*/
+			//===========================================================
+			document.getElementById("output").innerHTML ="output:"+output;
+			console.timeEnd("program");
+		</script>
+	</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Title Page</title>
+
+		
+	</head>
+	<body>
+		<div id="output"></div>
+		<script type="text/javascript">
+			console.time("program");
+			// Code goes here
+			var n = 600851475143, lastFactor, factor, maxFactor;
+			if(n%2 ===0){
+				lastFactor = 2;
+				n = n/2;
+				while(n%2 ===0){
+					n = n/2;
+				}
+			}else{
+				lastFactor = 1;
+				factor = 3;
+				maxFactor = Math.sqrt(n);
+				while(n>1 && factor<=maxFactor){
+					if(n%factor === 0){
+						n=n/factor;
+						lastFactor=factor;
+						while(n%factor === 0){
+
+						}
+						maxFactor = Math.sqrt(n);
+					}
+					factor += 2;
+				}
+			}
+			if(n==1){
+				document.getElementById("output").innerHTML ="BigestPrime:"+lastFactor;
+			}else{
+				document.getElementById("output").innerHTML ="BigestPrime:"+n;
+			}
+			
+			//alert("BigestPrime:"+largestPrime);
+			console.timeEnd("program");
+		</script>
+	</body>
+</html>

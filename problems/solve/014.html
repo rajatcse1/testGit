@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Problem 14</title>
+	</head>
+	<body>
+		<div id="output"></div>
+		<script type="text/javascript">
+			console.time("program");
+			var output;
+			//===========================================================
+			//MY WAY ---------------
+			var maxLen = 0, len, op={}, start, n;
+			for(var i=2; i<1000000; i++){
+				len = 1;
+				n = i;
+				while(n > 1){
+					if(op[n]){
+						len = len + op[n];
+						break;
+					}
+					len++;
+					if(n % 2 == 0){
+						n = n/2;
+					}else{
+						n = 3* n +1;
+					}
+
+				}
+				op[i]= len;
+				if(maxLen < len){
+					start = i;
+					maxLen = len;
+				}
+			}
+			output = start;
+			
+			//BETTER WAY -----------
+			
+			
+			//===========================================================
+			document.getElementById("output").innerHTML ="output:"+output;
+			console.timeEnd("program");
+		</script>
+	</body>
+</html>
