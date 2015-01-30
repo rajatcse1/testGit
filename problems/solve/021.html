@@ -13,11 +13,81 @@
 			var output;
 			//===========================================================
 			//MY WAY ---------------
+			var abmSum = 0, pair;
+			for (var i = 1; i < 10000; i++) {
+				pair = getAmbicablePair(i);
+				if(pair.isAmbicable){
+					abmSum += pair.first + pair.second;
+					i = pair.second + 1;
+				}
+				
+			};
+
+			function getAmbicablePair(n){
+				//console.info("------------------------search for :",n);
+				var obj = {
+					isAmbicable:false,
+					first:0,
+					second:0
+				};
+				var factSum = factorSum(n);
+				if(factSum !== n){
+					if( factorSum(factSum) === n){
+						console.info("Ambicable numbers:", n , factSum);
+						obj.isAmbicable = true;
+						obj.first = n;
+						obj.second = factSum;
+					}
+				}
+
+				return obj;
+			}
 
 			
+
+			function factorSum(n){
+				//console.info("factor sum:", n);
+				var sum = 1;
+				for (var j = 2, end=n; j < end; j++) {
+					if(n%j === 0){
+						end = n/j;
+						sum += j + end;
+						//console.info(n, "divisable by:", j, end);
+					}
+				};
+				//console.info("sum:",sum);
+				return sum;
+			}
+			output = abmSum;
+			
 			//BETTER WAY -----------
-			
-			
+			/*function factorSum(n){
+				var sum=1, p=2, j;
+				while (((p*p)<= n) && (n>1)){
+					if (n % p === 0){
+						j=p*p;
+					 	n=n / p;
+					 	while((n % p)===0){
+					 		j=j*p;
+					 		n=n / p;
+					 	}
+					 		
+					 	sum=sum*(j-1);
+					 	sum=sum / (p-1);
+					}
+					 
+					if (p=2) {
+						p=3
+					}  else {
+					 	p=p+2;
+					}
+				}
+				if (n>1) {
+					sum=sum*(n+1);
+				}  
+				return sum;
+			}*/
+						
 			//===========================================================
 			document.getElementById("output").innerHTML ="output:"+output;
 			console.timeEnd("program");

@@ -13,7 +13,49 @@
 			var output;
 			//===========================================================
 			//MY WAY ---------------
+			//1 x 2 x 3 ......99 x 100 = ??
 
+			var mul = "1", tempMul;
+			var counter = 2, tempCounter;
+			while(counter <= 100){
+				//console.info("-------- x :",counter);
+				tempCounter = counter-1;
+				tempMul = mul;
+				while(tempCounter>0){
+					mul = stringAdder(mul, tempMul);
+					tempCounter--;
+				}
+				counter++;
+			}
+
+			function stringAdder(mul, add){// 13457 3462
+				var mulArr = mul.split("");
+				var addArr = add.split("");
+				var mulLen = mulArr.length;
+				var addLen = addArr.length;
+				var carry = 0, tempSum;
+				for (var i = 0; i < mulLen; i++) {
+					tempSum = carry + parseInt(mulArr[mulLen - i-1]) + (parseInt(addArr[addLen - i-1])||0);
+					if(tempSum>9){
+						carry = Math.floor(tempSum / 10);
+					}else{
+						carry = 0;
+					}
+
+					mulArr[mulLen - i-1] = tempSum % 10;
+				}
+				if(carry>0){
+					mulArr.unshift(carry);
+				}
+				//console.info("mul, add, sum:",mul, add, mulArr.join(""));
+				return mulArr.join("");
+			}
+
+			//get sum of 100!
+			output = 0;
+			for (var i = 0, len=mul.length; i < len; i++) {
+				output += parseInt(mul.charAt(i));
+			};
 			
 			//BETTER WAY -----------
 			
