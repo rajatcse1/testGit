@@ -34,3 +34,8 @@ All concepts collected together
       - [Interface Segregation Principle](https://docs.google.com/file/d/0BwhCYaYDn8EgNzAzZjA5ZmItNjU3NS00MzQ5LTkwYjMtMDJhNDU5ZTM0MTlh/edit?hl=en)
       - [Single Responsibility Principle](http://www.objectmentor.com/resources/articles/srp.pdf)
       - [Liskov's Substitution Principle](https://docs.google.com/file/d/0BwhCYaYDn8EgNzAzZjA5ZmItNjU3NS00MzQ5LTkwYjMtMDJhNDU5ZTM0MTlh/edit?hl=en)
+  - DESIGN PATTERNS
+    - http://stackoverflow.com/questions/1673841/examples-of-gof-design-patterns
+    - http://sourcemaking.com/design_patterns
+    - http://www.go4expert.com/articles/design-pattern-simple-examples-t5127/
+    - http://www.tutorialspoint.com/design_pattern/flyweight_pattern.htm
