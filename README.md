@@ -43,3 +43,4 @@ All concepts collected together
     - http://www.codeproject.com/Articles/29036/Patterns-in-Real-Life
     - http://www.journaldev.com/1827/java-design-patterns-example-tutorial
     - http://mahemoff.com/paper/software/gofMetaphors/
+    - http://javapapers.com/design-patterns/facade-design-pattern/
