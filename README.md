@@ -39,3 +39,7 @@ All concepts collected together
     - http://sourcemaking.com/design_patterns
     - http://www.go4expert.com/articles/design-pattern-simple-examples-t5127/
     - http://www.tutorialspoint.com/design_pattern/flyweight_pattern.htm
+    - http://wwwswt.informatik.uni-rostock.de/deutsch/Lehre/Uebung/Beispiele/PatternExamples/patexamples.htm
+    - http://www.codeproject.com/Articles/29036/Patterns-in-Real-Life
+    - http://www.journaldev.com/1827/java-design-patterns-example-tutorial
+    - http://mahemoff.com/paper/software/gofMetaphors/
