@@ -20,6 +20,7 @@ All concepts collected together
   - Concepts:
     - http://codetunnel.io/angularjs-controller-as-or-scope/
     - https://rclayton.silvrback.com/parent-child-controller-communication
+    - https://github.com/johnpapa/angularjs-styleguide
   - Videos:
     - [Developing Large Scale Applications in AngularJS](https://www.youtube.com/watch?v=b92Y77TExiA)
   - Examples
