@@ -19,6 +19,7 @@ All concepts collected together
   - [Watch](http://www.bennadel.com/blog/2566-scope-watch-vs-watchcollection-in-angularjs.htm) [[diagram]](http://teropa.info/blog/2014/01/26/the-three-watch-depths-of-angularjs.html)
   - Concepts:
     - http://codetunnel.io/angularjs-controller-as-or-scope/
+    - https://rclayton.silvrback.com/parent-child-controller-communication
   - Videos:
     - [Developing Large Scale Applications in AngularJS](https://www.youtube.com/watch?v=b92Y77TExiA)
   - Examples
