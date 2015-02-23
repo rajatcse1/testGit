@@ -21,6 +21,11 @@ All concepts collected together
     - http://codetunnel.io/angularjs-controller-as-or-scope/
     - https://rclayton.silvrback.com/parent-child-controller-communication
     - https://github.com/johnpapa/angularjs-styleguide
+    - http://stackoverflow.com/questions/20286917/angularjs-understanding-design-pattern
+    - https://github.com/mgechev/angularjs-in-patterns#command
+    - http://blog.xebia.com/2014/02/23/promises-and-design-patterns-in-angularjs/
+    - http://blog.mgechev.com/2014/05/08/angularjs-in-patterns-part-1-overview-of-angularjs/
+    - http://codingsmackdown.tv/blog/2013/04/29/hailing-all-frequencies-communicating-in-angularjs-with-the-pubsub-design-pattern/
   - Videos:
     - [Developing Large Scale Applications in AngularJS](https://www.youtube.com/watch?v=b92Y77TExiA)
   - Examples
