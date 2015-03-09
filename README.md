@@ -25,6 +25,7 @@ All concepts collected together
     - https://github.com/mgechev/angularjs-in-patterns#command
     - http://blog.xebia.com/2014/02/23/promises-and-design-patterns-in-angularjs/
     - http://blog.mgechev.com/2014/05/08/angularjs-in-patterns-part-1-overview-of-angularjs/
+    - http://sporto.github.io/blog/2013/06/24/nested-recursive-directives-in-angular/
     - http://codingsmackdown.tv/blog/2013/04/29/hailing-all-frequencies-communicating-in-angularjs-with-the-pubsub-design-pattern/
   - Videos:
     - [Developing Large Scale Applications in AngularJS](https://www.youtube.com/watch?v=b92Y77TExiA)
