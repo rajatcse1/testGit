@@ -47,6 +47,9 @@ All concepts collected together
 8. others
   - yo:
     - http://code.tutsplus.com/tutorials/build-your-own-yeoman-generator--cms-20040
+    - http://techiedreams.com/create-and-publish-a-yeoman-generator/
+    - http://devdactic.com/creating-custom-yeoman-generator/
+    - http://stephenplusplus.github.io/yeoman.io/generators.html
   - OOAD : 
     - Quick learn: 
       - http://www.codeproject.com/Articles/93369/How-I-explained-OOD-to-my-wife
