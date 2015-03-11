@@ -20,6 +20,9 @@ All concepts collected together
   - Directive:
     - isolate Scope:
       - https://gist.github.com/CMCDragonkai/6282750
+    - Modal popup:
+      - http://adamalbrecht.com/2013/12/12/creating-a-simple-modal-dialog-directive-in-angular-js/
+      - https://github.com/rajatcse1/angular-modal-service
   - Concepts:
     - http://codetunnel.io/angularjs-controller-as-or-scope/
     - https://rclayton.silvrback.com/parent-child-controller-communication
@@ -42,6 +45,8 @@ All concepts collected together
 7. Laravel
   - [many topics together](http://culttt.com/2014/03/31/multi-tenancy-laravel-4/)
 8. others
+  - yo:
+    - http://code.tutsplus.com/tutorials/build-your-own-yeoman-generator--cms-20040
   - OOAD : 
     - Quick learn: 
       - http://www.codeproject.com/Articles/93369/How-I-explained-OOD-to-my-wife
