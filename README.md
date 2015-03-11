@@ -17,6 +17,9 @@ All concepts collected together
   - [Error Handling 2](http://bahmutov.calepin.co/catch-all-errors-in-angular-app.html)
   - [Caching](http://www.metaltoad.com/blog/angularjs-vs-browser-http-cache)
   - [Watch](http://www.bennadel.com/blog/2566-scope-watch-vs-watchcollection-in-angularjs.htm) [[diagram]](http://teropa.info/blog/2014/01/26/the-three-watch-depths-of-angularjs.html)
+  - Directive:
+    - isolate Scope:
+      - https://gist.github.com/CMCDragonkai/6282750
   - Concepts:
     - http://codetunnel.io/angularjs-controller-as-or-scope/
     - https://rclayton.silvrback.com/parent-child-controller-communication
