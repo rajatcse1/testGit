@@ -10,6 +10,7 @@ All concepts collected together
   - Tooltip : http://webdesign.tutsplus.com/articles/quick-tip-tooltips-courtesy-of-html5-data-attributes--webdesign-4826
 2. Templates
 3. Angular
+  - [All](http://www.yearofmoo.com/2012/10/more-angularjs-magic-to-supercharge-your-webapp.html#more-about-directives)
   - [Interceptor](http://www.webdeveasy.com/interceptors-in-angularjs-and-useful-examples/)
   - [Event Handling](http://toddmotto.com/all-about-angulars-emit-broadcast-on-publish-subscribing/)
   - [Security](https://docs.google.com/presentation/d/1347saovLLeQ9y-WRElKXg26fHNGnbrUFhft_2m4rOwc/edit?pli=1#slide=id.p)
