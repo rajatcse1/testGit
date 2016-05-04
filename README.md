@@ -45,6 +45,8 @@ All concepts collected together
   - [JS Data Structure](https://github.com/monmohan/dsjslib)
 7. Laravel
   - [many topics together](http://culttt.com/2014/03/31/multi-tenancy-laravel-4/)
+8. J2EE
+  - [Shiboleth setup](https://dzone.com/articles/developing-identity-management)
 8. others
   - yo:
     - http://code.tutsplus.com/tutorials/build-your-own-yeoman-generator--cms-20040
