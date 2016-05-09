@@ -47,7 +47,9 @@ All concepts collected together
   - [many topics together](http://culttt.com/2014/03/31/multi-tenancy-laravel-4/)
 8. J2EE
   - [Shiboleth setup](https://dzone.com/articles/developing-identity-management)
-8. others
+9. DATA-SCIENCE
+  - [RESOURCES](http://www.analyticsvidhya.com/blog/2015/07/github-special-data-scientists-to-follow-best-tutorials/)
+10. others
   - yo:
     - http://code.tutsplus.com/tutorials/build-your-own-yeoman-generator--cms-20040
     - http://techiedreams.com/create-and-publish-a-yeoman-generator/
