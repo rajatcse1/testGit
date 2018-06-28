@@ -1,59 +1,65 @@
-def pushInRange(a,s,e):
-  op = []
-  for i in range(s,e):
-    op.append(a[i])
-  return op
+def pushInRange(a, s, e):
+	op = []
+	for i in range(s, e):
+		op.append(a[i])
+	return op
+
+
 def morganAndString(a, b):
-    a = list(map(ord, str(a)))
-    b = list(map(ord, str(b)))
-    na = len(a)
-    nb = len(b)
-    ia = ib = connected = 0
-    op = []
-    while ia < na and ib <nb:
-        if a[ia] < b[ib]:
-            op.append(a[ia])
-            ia += 1
-        elif a[ia] > b[ib]:
-            op.append(b[ib])
-            ib += 1
-        else:
-            connected = 1
-            while a[ia+connected] == b[ib+connected]:
-                connected += 1
-                if ia+connected == na:
-                    connected -= 1
-                    op += pushInRange(a, ia,(ia+connected))
-                    ia += connected
-                    break
-                if ib+connected == nb:
-                    connected -= 1
-                    op += pushInRange(b, ib,(ib+connected))
-                    ib += connected
-                    break
-            print(ia,connected,na)
-            print(ib,connected,nb)
-            if a[ia+connected] < b[ib+connected]:
-                op += pushInRange(a, ia,(ia+connected-1))
-                ia += connected-1
-            else:
-                op += pushInRange(b, ib,(ib+connected-1))
-                ib += connected-1
-    if ia == na:
-        op += b[ib:]
-    if ib == nb:
-        op += a[ia:]
-    op = list(map(chr, op))
-    print(ia,ib)
-    return ''.join(op)        
-  
+	a = list(map(ord, str(a)))
+	b = list(map(ord, str(b)))
+	na = len(a)
+	nb = len(b)
+	ia = ib = connected = 0
+	op = []
+	while ia < na and ib < nb:
+		if a[ia] < b[ib]:
+			op.append(a[ia])
+			ia += 1
+		elif a[ia] > b[ib]:
+			op.append(b[ib])
+			ib += 1
+		else:
+			connected = 0
+			t = 1
+			while a[ia + t] == b[ib + t]:
+				if a[ia + t] < a[ia]:
+				  connected += 1
+				t += 1
+				if ia + t == na:
+					t -= 1
+					op += pushInRange(a, ia, (ia + connected))
+					ia += connected
+					break
+				if ib + t == nb:
+					t -= 1
+					op += pushInRange(b, ib, (ib + connected))
+					ib += connected
+					break
+			print(ia, t, na)
+			print(ib, t, nb)
+			if a[ia + t] < b[ib + t]:
+				op += pushInRange(a, ia, (ia + connected - 1))
+				ia += connected - 1
+			else:
+				op += pushInRange(b, ib, (ib + connected - 1))
+				ib += connected - 1
+	if ia == na:
+		op += b[ib:]
+	if ib == nb:
+		op += a[ia:]
+	op = list(map(chr, op))
+	print(ia, ib)
+	return ''.join(op)
+
 
 # str1 = 'JACK'
 # str2 = 'DANIEL'
 str1 = 'ABACABA'
 str2 = 'ABACABA'
 
-print(morganAndString(str1,str2))
+print(morganAndString(str1, str2))
+
 #-------------------------------------------------------
 def morganAndString(a, b):
     op = []
